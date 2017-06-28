@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.errorlabs.spotface">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.front" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/lotte"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/lotte"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainMenu" />
+        <activity
+            android:name=".Activities.Settings.Settings"
+            android:parentActivityName=".MainMenu" />
+        <activity
+            android:name=".Activities.Register.ConfirmPicture"
+            android:parentActivityName=".MainMenu" />
+        <activity
+            android:name=".Activities.Register.Capture"
+            android:parentActivityName=".MainMenu" />
+        <activity
+            android:name=".Activities.Register.ConfirmCapture"
+            android:parentActivityName=".MainMenu" />
+        <activity android:name=".Activities.Register.TrainSuccess" />
+        <activity
+            android:name=".Activities.Authenticate.Recognition"
+            android:parentActivityName=".MainMenu" />
+        <activity
+            android:name=".Activities.Authenticate.ConfirmRecPicture"
+            android:parentActivityName=".MainMenu" />
+        <activity
+            android:name=".Activities.Authenticate.Result"
+            android:parentActivityName=".MainMenu" />
+        <activity android:name=".Activities.ViewAll.ViewAll"
+            android:parentActivityName=".MainMenu"></activity>
+    </application>
+
+</manifest>

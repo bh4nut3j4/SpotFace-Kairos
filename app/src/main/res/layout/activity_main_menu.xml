@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent"
+    tools:context="in.errorlabs.spotface.MainMenu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/spotface"
+            android:id="@+id/img"
+            android:layout_marginTop="20dp"
+            android:elevation="20dp"
+            android:foregroundGravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/img">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Register Face"
+        android:background="#00e676"
+        android:textStyle="bold"
+        android:id="@+id/register_face_btn"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Authenticate with SpotFace"
+        android:layout_below="@+id/register_face_btn"
+        android:background="#00e676"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:id="@+id/auth_with_sp_btn"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Settings"
+        android:layout_below="@+id/auth_with_sp_btn"
+        android:background="#00e676"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:id="@+id/settings_btn"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="View All Registered Member Names"
+            android:layout_below="@+id/settings_btn"
+            android:background="#00e676"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:id="@+id/view_btn"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Exit"
+            android:layout_below="@+id/view_btn"
+            android:background="#00e676"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:id="@+id/exit"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exit"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="NOTE: If camera does not show up(work), Please enable camera permissions in the AppSettings."/>
+
+
+</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

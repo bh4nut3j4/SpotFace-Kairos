@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.errorlabs.spotface.Activities.Settings.Settings">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/rel2"
+            android:visibility="gone">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="20dp"
+                android:foregroundGravity="center_vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/thrfreq"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Threshold Percentage( > 40%)"
+                        android:textStyle="bold"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnok"
+                        android:layout_below="@+id/thrfreq"
+                        android:text="Ok"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cancl"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/thrfreq"
+                        android:text="cancel"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/rel1">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/r1"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/r0"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MIN MATCH THRESHOLD IS :"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:id="@+id/t1"
+                    android:gravity="center_horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 60%"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/tt1"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/t1" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="edit"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/editbtn" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r1"
+            android:id="@+id/r2"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reset All Data"
+                    android:textStyle="bold"
+                    android:layout_marginTop="30dp"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:id="@+id/t2"
+                    android:gravity="center"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RESET"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="#f44336"
+                    android:id="@+id/reset_btn"
+                    android:layout_below="@+id/t2"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="30dp"
+            android:elevation="20dp"
+            android:layout_below="@+id/r2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="back to main menu"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:id="@+id/back"
+            android:background="#03a9f4"
+            android:foregroundGravity="center"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="20sp"
+            android:id="@+id/r0">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Default Camera is set to :"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:id="@+id/id1"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/changebtn"
+                    android:text="Front"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/id1"
+                    android:layout_toEndOf="@+id/id1"
+                    android:layout_marginLeft="51dp"
+                    android:layout_marginStart="51dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/id3"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/changebtn"
+                    android:text="Tap the button to change"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>
